@@ -65,8 +65,8 @@ papers, with a share of Plus revenue going to each contributor.
 
 ## Checklist
 
-- [ ] Demo video, under 2 minutes, public on YouTube
-- [ ] Public repository with MIT licence
+- [x] Demo video: https://youtu.be/DTX8kb861vw
+- [x] Public repository: https://github.com/G-ojies/worked
 - [ ] 1024 x 1024 icon: `assets/icon.png`
 - [ ] Screenshot at 1179 x 2556, no device frame
 - [ ] Registered with the school email address

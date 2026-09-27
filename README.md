@@ -3,7 +3,7 @@
 Past exam questions with every step of the solution written out, for university
 students who revise on a phone with no reliable signal.
 
-Built for the RevenueCat Shipaton 2026.
+Built for the RevenueCat Shipaton 2026. [Watch the demo](https://youtu.be/DTX8kb861vw).
 
 ## The problem
 
