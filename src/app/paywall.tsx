@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Button, Tag } from "../components/ui";
 import { courses, totalQuestions } from "../lib/content";
-import { usePurchases } from "../store/purchases";
+import { DEMO_BUILD, usePurchases } from "../store/purchases";
 import { radius, space, useTheme } from "../theme";
 
 const PRIVACY_URL = "https://g-ojies.github.io/worked/privacy.html";
@@ -206,7 +206,9 @@ export default function Paywall() {
               </Pressable>
             </View>
             <Text style={[styles.small, { color: t.muted }]}>
-              Subscriptions renew until cancelled. Cancel any time in Google Play.
+              {DEMO_BUILD
+                ? "Demo build. Purchases use the RevenueCat Test Store and nothing is charged."
+                : "Subscriptions renew until cancelled. Cancel any time in Google Play."}
             </Text>
           </>
         )}

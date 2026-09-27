@@ -16,7 +16,10 @@ export const ENTITLEMENT = "Plus";
 // build configured with one, so it must never reach a store build.
 const STORE_KEY = process.env.EXPO_PUBLIC_RC_ANDROID_KEY ?? "";
 const TEST_KEY = process.env.EXPO_PUBLIC_RC_TEST_KEY ?? "";
-const API_KEY = __DEV__ && TEST_KEY ? TEST_KEY : STORE_KEY;
+// A demo build is a debuggable build made for judges and testers to install
+// directly. It is never uploaded to a store, and it says so on the paywall.
+export const DEMO_BUILD = process.env.EXPO_PUBLIC_DEMO_BUILD === "1";
+const API_KEY = (__DEV__ || DEMO_BUILD) && TEST_KEY ? TEST_KEY : STORE_KEY;
 
 // "pending" is a payment the store accepted that has not unlocked Plus yet. It
 // must never be reported as a failure: the customer has paid.

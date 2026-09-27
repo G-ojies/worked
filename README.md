@@ -5,6 +5,12 @@ students who revise on a phone with no reliable signal.
 
 Built for the RevenueCat Shipaton 2026. [Watch the demo](https://youtu.be/DTX8kb861vw).
 
+## Try it
+
+Download the demo APK from the [latest release](https://github.com/G-ojies/worked/releases/latest) and install it on an Android phone (Android 7 or newer). You may need to allow installs from your browser or file manager.
+
+The demo build uses the RevenueCat Test Store, so you can go through the whole paywall and buy any plan. Nothing is charged. Choose "Test valid purchase" in the dialog.
+
 ## The problem
 
 Past questions are how Nigerian undergraduates revise. They circulate as
